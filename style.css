@@ -101,7 +101,7 @@ body{
         top: 0;
         text-align: center;
         padding: 80px 0;
-        transition: 0.7s;
+        transition: 0.4s;
     }
     .header .menu a{
         display: block;
@@ -128,12 +128,13 @@ body{
     }
 
     body .container .box-contain{
-        width: 210px;
-        height: 350px;
+        width: 150px;
+        height: 260px;
         margin: 10px;
+        font-size: 12px;
     }
     body .container .box-contain img{
-        width: 210px;
+        width: 150px;
     }
     body .paggination a .number{
         font-size: 15px;
@@ -158,13 +159,13 @@ body{
         font-size: 20px;
     }
     body .container .box-contain{
-        width: 150px;
-        height: 260px;
+        width: 130px;
+        height: 220px;
         margin: 10px;
         font-size: 12px;
     }
     body .container .box-contain img{
-        width: 150px;
+        width: 130px;
     }
     body .paggination a .number{
         font-size: 15px;
