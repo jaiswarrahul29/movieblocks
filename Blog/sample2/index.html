@@ -1,0 +1,133 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieBlocks</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- progressbar-start-here -->
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+    <!-- progressbar-ends-here -->
+
+    <!-- navbars-start -->
+
+    <div class="header">
+        <!-- menu-bar -->
+        <input type="checkbox" id="chk">
+        <label for="chk" class="show-menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <!-- logo -->
+        <img src="../../image/logo.png" alt="">
+        <!-- navs -->
+        <ul class="menu">
+            <a href="../../index.html">Home</a>
+            <a href="#">Bollywood</a>
+            <a href="#">Hollywood Dubbed</a>
+            <a href="#">South Dubbed</a>
+            <a href="#">Webseries</a>
+            <a href="#">Year</a>
+            <label for="chk" class="hide-menu-btn">
+                <i class="fas fa-times"></i>
+            </label>
+        </ul>
+        <!-- search -->
+        <i class="fas fa-search search"></i>
+    </div>
+
+    <!-- navbars-ends -->
+
+    <!-- main-contianer-starts-here -->
+
+    <div class="section">
+        <div class="title-head">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <p>Mirzapur 2 (2020) 720p </p>
+        </div>
+    
+        <div class="poster">
+            <iframe width="80%" height="500" src="https://www.youtube.com/embed/xMKzdQrC5TI?controls=0" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+    
+            <h2>Movie File Information</h2>
+        </div>
+    
+        <div class="information">
+            <p><span>Language:</span>Hindi</p>
+            <p><span>Genres:</span> Action, Crime,Drama</p>
+            <p><span>Actors:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, neque!</p>
+            <p><span>Quality:</span> 720p BluRay</p>
+        </div>
+    
+        <div class="download">
+            <p>Click Below To Download The Movie</p>
+            <a href="#">
+                <li>Download Now</li>
+            </a>
+        </div>
+    
+        <div class="review">
+            <h2>Full Movie Review</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, pariatur? Quis nesciunt quaerat
+                velit veniam, debitis hic dolores exercitationem facilis laboriosam alias? Fugit placeat repudiandae
+                officiis quibusdam ad sunt saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero adipisci
+                expedita autem quis dolores non obcaecati ipsum sunt, veniam sapiente ducimus explicabo, vitae similique
+                sit ullam blanditiis voluptate, itaque sed? Modi fugiat debitis saepe numquam maxime nihil consectetur
+                error expedita. Magni quidem ea doloribus ratione architecto temporibus eius rem ab. Lorem ipsum dolor
+                sit amet, consectetur adipisicing elit. Dolorum officia saepe dignissimos recusandae quia sit placeat
+                doloremque quibusdam quasi, id facere, harum aliquid unde laborum ducimus. Ratione sapiente consequuntur
+                ut esse ipsam quisquam soluta reprehenderit enim, dolores odit voluptas, cum nesciunt aut impedit
+                officia mollitia iure explicabo veritatis exercitationem voluptatibus?</p>
+        </div>
+    
+    </div>
+    
+    <h2 class="heading">Recent Article</h2>
+    
+    <div class="contain">
+        <a href="#">
+            <div class="box-contain">
+                <img src="../../image/demo-image/mirzapur.jpg" alt="">
+            </div>
+        </a>
+        
+        <a href="#">
+            <div class="box-contain">
+                <img src="../../image/demo-image/Footfairy.jpg" alt="">
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="box-contain">
+                <img src="../../image/demo-image/Holidate.jpg" alt="">
+            </div>
+        </a>
+        
+    
+    </div>
+
+
+<!-- footer-section-starts-here -->
+    <div class="footer">
+        <i class="fa fa-copyright" aria-hidden="true"></i>
+        <p>2020 MovieBlocks | All rights resevered</p>
+    </div>
+<!-- footer-section-ends-here -->
+
+<script>
+    let progress = document.getElementById('progressbar');
+    let TotalHeight = document.body.scrollHeight - window.innerHeight;
+    window.onscroll = function () {
+        let progressHeight = (window.pageYOffset / TotalHeight) * 100;
+        progress.style.height = progressHeight + "%";
+    }
+</script>
+</body>
+
+</html>
